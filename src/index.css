@@ -12,3 +12,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.navigation {
+  background-color: red;
+}
+
+nav {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+nav ul li a{
+  display: inline-block;
+  width: 200px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+}
+/*hover me imagino que es para cuando se pasa el mouse encima de esos tags*/
+nav ul li a:hover {
+  background-color: #00b8e4;
+}
+
+nav ul li:hover {
+  background-color: rgba(0, 184, 228, 0.7);
+}
